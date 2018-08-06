@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source scl_source enable rh-postgresql95
+
+exec /opt/rh/rh-postgresql95/root/usr/bin/repmgrd -f ${REPMGRDCONF} -p ${PIDFILE} -d --verbose
